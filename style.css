@@ -1,0 +1,82 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #1E1E1E; /* Dark gray background similar to ChatGPT */
+    color: #CCCCCC; /* Light gray text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.hero p {
+    margin: 0 0 10px;
+}
+
+.hero span {
+    font-weight: bold;
+    color: #66FCF1; /* Light blue color for emphasis */
+}
+
+.projects-section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.project {
+    display: block;
+    background-color: #333333; /* Slightly lighter gray for project containers */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+}
+
+.project:hover {
+    background-color: #444444; /* Slightly lighter on hover */
+}
+
+.project h4 {
+    margin-top: 0;
+    color: #66FCF1; /* Light blue color for project titles */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul a {
+    color: #66FCF1; /* Light blue color for links */
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.stack {
+    color: #66FCF1;
+    background-color: transparent;
+    
+}
