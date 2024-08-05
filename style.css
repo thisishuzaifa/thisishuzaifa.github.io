@@ -1,5 +1,6 @@
 /* style.css */
 
+
 body {
     margin: 0;
     font-family: "Ubuntu Mono", monospace;
@@ -8,7 +9,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-size: large;
 }
 
