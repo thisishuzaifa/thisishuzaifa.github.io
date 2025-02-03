@@ -1,147 +1,96 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Huzaifa Khalid - Tech professional in Vancouver specializing in software development and IT. Experienced in ReactJS, .NET, AWS, and more."
-        />
-        <meta
-            name="keywords"
-            content="Huzaifa Khalid, Software Developer, IT Professional, Vancouver, ReactJS, .NET, AWS, PostgreSQL, Azure"
-        />
-        <meta name="author" content="Huzaifa Khalid" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Huzaifa Khalid - Software Developer & IT Professional in Vancouver">
+    <title>Huzaifa Khalid | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle dark/light mode">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.huzzy.dev/" />
-        <meta
-            property="og:title"
-            content="Huzaifa Khalid - Software Developer & IT Professional"
-        />
-        <meta
-            property="og:description"
-            content="Tech professional in Vancouver specializing in software development and IT. Experienced in ReactJS, .NET, AWS, and more."
-        />
-
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.huzzy.dev/" />
-        <meta
-            property="twitter:title"
-            content="Huzaifa Khalid - Software Developer & IT Professional"
-        />
-        <meta
-            property="twitter:description"
-            content="Tech professional in Vancouver specializing in software development and IT. Experienced in ReactJS, .NET, AWS, and more."
-        />
-
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ubuntu+Mono:ital@0;1&display=swap"
-            rel="stylesheet"
-        />
-        <title>Huzaifa Khalid</title>
-    </head>
-    <body>
-        <main>
-            <div class="hero">
-                <p>
-                    Hello, my name is <span>Huzaifa</span> and this is my
-                    website. I do tech things in Vancouver. I can write code and
-                    make apps and also do some system design. Have experience in
-                    IT and Software Development. 
-                </p>
-                <br />
-                <p>
-                    Looking for new job, want to do software dev preferrably but
-                    can go Senior roles in IT. Currently working for
-                    Northeastern University working on mainly IT automation and app integrations.
+    <div class="container">
+        <header class="hero">
+            <div class="avatar-container">
+                <img src="/avatar.jpeg" alt="Huzaifa Khalid" class="avatar">
+            </div>
+            <div class="hero-content">
+                <h1>Huzaifa Khalid</h1>
+                <h2>Software Developer & IT Professional</h2>
+                <p>Vancouver-based tech enthusiast specializing in full-stack development, cloud solutions, and system design.
+                Currently working in higher-ed as a technical specialist building custom solutions for the company. Working with 
+                API integrations and automations.
                 </p>
             </div>
+        </header>
 
-            <div class="projects-section">
-                <p>some of my work (sorry I can't share internal tools)</p>
+        <section class="skills">
+            <h3>Tech Stack</h3>
+            <div class="skill-grid">
+                <div class="skill-tag">Go</div>
+                <div class="skill-tag">ReactJS</div>
+                <div class="skill-tag">Java</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">NodeJS</div>
+                <div class="skill-tag">Python</div>
+            </div>
+        </section>
 
-                <a href="https://ruyasolutions.vercel.app/" class="project">
-                    <div>
-                        <h4>Ruya Solutions</h4>
-                        <p>We do development and consulting on a contract basis. Do reach out if you have and idea.
-                        Successfuly helped some startups and developed sites and applications for small businesses.
-                        </p>
-                        <p class="stack">
-                            ReactJS, PostgreSQL, SQLite, AWS, NodeJS, TailwindCSS
-                        </p>
-                        <p class="stack">
-                            system analysis and design, prototyping, testing 
-                        </p>
+        <section class="projects">
+            <h3>Featured Projects</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Devrex</h4>
+                    <p>Contract development and consulting platform helping startups build innovative digital solutions.</p>
+                    <div class="project-tags">
+                        <span>ReactJS</span>
+                        <span>AWS</span>
+                        <span>PostgreSQL</span>
                     </div>
-                </a>
-                <a href="https://scoreforoutcome.com/" class="project">
-                    <div>
-                        <h4>Score for Outcome</h4>
-                        <p>Platform to measure therapy outcome in patients.</p>
-                        <p class="stack">
-                            ReactJS, PostgreSQL, .Net API, AWS Lightsail, Chakra
-                            UI
-                        </p>
-                     
+                    <a href="https://www.devrexdigital.com/" target="_blank" class="project-link">
+                        View Project
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h4>Score for Outcome</h4>
+                    <p>Platform for measuring and tracking patient therapy outcomes with comprehensive analytics.</p>
+                    <div class="project-tags">
+                        <span>.NET</span>
+                        <span>AWS</span>
+                        <span>ReactJS</span>
                     </div>
-                </a>
-                <a
-                    href="https://github.com/dootrex/Avi-QuickRez/tree/huzaifa-emailservice"
-                    class="project"
-                >
-                    <div>
-                        <h4>Quickrez</h4>
-                        <p>
-                            App to track realtime reservations in restaurants.
-                        </p>
+                    <a href="https://scoreforoutcome.com/" target="_blank" class="project-link">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                        <p class="stack">
-                            ReactJS, ASP.NET Core, MS-SQL Server, Azure
-                        </p>
-                    </div>
+        <section class="contact">
+            <h3>Get in Touch</h3>
+            <div class="contact-links">
+                <a href="mailto:huzaifaa.khalid97@gmail.com" class="contact-link">
+                    📧 Email
                 </a>
-                <a href="https://github.com/ptdo/onmydesk" class="project">
-                    <div>
-                        <h4>OnMyDesk</h4>
-                        <p>
-                            App to tag images and post them to a community site.
-                            Good for affiliate marketing.
-                        </p>
-                        <p class="stack">
-                            NextJS, PassportJS, SQLite, TailwindCSS
-                        </p>
-                    </div>
+                <a href="https://github.com/thisishuzaifa" target="_blank" class="contact-link">
+                    💻 GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/muhammad-huzaifa-khalid/" target="_blank" class="contact-link">
+                    💼 LinkedIn
                 </a>
             </div>
+        </section>
+    </div>
 
-            <h2>Links</h2>
-            <ul>
-                <li>
-                    E-mail:<a href="mailto:huzaifaa.khalid97@gmail.com">
-                        huzaifaa.khalid97@gmail.com</a
-                    >
-                </li>
-                <li>
-                    Github:
-                    <a href="https://github.com/thisishuzaifa">
-                        thisishuzaifa</a
-                    >
-                </li>
-                <li>
-                    Linkedin:
-                    <a
-                        href="https://www.linkedin.com/in/muhammad-huzaifa-khalid/"
-                    >
-                        me, but on linkedin</a
-                    >
-                </li>
-            </ul>
-        </main>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
