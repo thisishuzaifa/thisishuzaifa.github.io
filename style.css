@@ -1,21 +1,21 @@
 :root {
-    --bg-primary: #12182b; /* Dark Blue */
-    --bg-secondary: #00adb5; /* Teal */
+    --bg-primary: #1a1b26; /* Darker, more modern blue */
+    --bg-secondary: #7aa2f7; /* Softer blue */
     --text-primary: #ffffff;
-    --text-secondary: #12182b;
-    --accent-color: #00adb5; /* Teal Accent */
+    --text-secondary: #1a1b26;
+    --accent-color: #bb9af7; /* Soft purple */
     --border-color: #ffffff;
     --box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
     --transition-speed: 0.2s;
 }
 
 .light-theme {
-    --bg-primary: #f8f9fa; /* Light Gray */
-    --bg-secondary: #00adb5; /* Teal */
-    --text-primary: #212529; /* Dark Gray */
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #7aa2f7;
+    --text-primary: #1a1b26;
     --text-secondary: #f8f9fa;
-    --accent-color: #212529; /* Dark Gray Accent */
-    --border-color: #212529;
+    --accent-color: #bb9af7;
+    --border-color: #1a1b26;
 }
 
 * {
@@ -257,18 +257,23 @@ section h3::after {
 }
 
 .skill-box {
-    background-color: var(--bg-secondary);
-    color: var(--text-secondary);
+    background-color: var(--bg-primary);
     border: 3px solid var(--border-color);
-    padding: 0.75rem 1rem;
-    font-weight: bold;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
     box-shadow: var(--box-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all var(--transition-speed);
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
 }
 
 .skill-box:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+    background-color: var(--accent-color);
+    color: var(--text-secondary);
 }
 
 /* Projects Section */
@@ -279,16 +284,35 @@ section h3::after {
 }
 
 .project-card {
+    background-color: var(--bg-primary);
     border: 3px solid var(--border-color);
     padding: 2rem;
-    background-color: var(--bg-primary);
     box-shadow: var(--box-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all var(--transition-speed);
+    position: relative;
+    overflow: hidden;
 }
 
 .project-card:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+    transform: scaleX(1);
 }
 
 .project-card h4 {
@@ -305,12 +329,13 @@ section h3::after {
 }
 
 .project-tags span {
-    background-color: var(--bg-secondary);
+    background-color: var(--accent-color);
     color: var(--text-secondary);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
     border: 2px solid var(--border-color);
-    font-size: 0.85rem;
-    font-weight: bold;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .project-link {
@@ -318,17 +343,19 @@ section h3::after {
     background-color: var(--accent-color);
     color: var(--text-secondary);
     text-decoration: none;
-    padding: 0.75rem 1rem;
-    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
     border: 3px solid var(--border-color);
-    font-weight: bold;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: var(--box-shadow);
+    transition: all var(--transition-speed);
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
 }
 
 .project-link:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+    background-color: var(--bg-secondary);
 }
 
 /* Contact Section */
@@ -339,22 +366,24 @@ section h3::after {
 }
 
 .contact-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    background-color: var(--bg-secondary);
+    background-color: var(--accent-color);
     color: var(--text-secondary);
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
     border: 3px solid var(--border-color);
-    font-weight: bold;
     box-shadow: var(--box-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all var(--transition-speed);
+    margin: 0.5rem;
+    letter-spacing: 0.1em;
 }
 
 .contact-link:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+    background-color: var(--bg-secondary);
 }
 
 .contact-icon {
@@ -392,12 +421,21 @@ footer {
         margin-top: 0.5rem;
     }
 
+    .title-box h2 {
+        font-size: 1rem;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
 
     .contact-links {
         flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-link {
+        margin: 0.5rem 0;
     }
 
     section {
